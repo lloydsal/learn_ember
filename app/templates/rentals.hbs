@@ -6,3 +6,7 @@
     About Us
   {{/link-to}}
 </div>
+
+{{#each this.model as |RentalUnit|}}
+  <RentalListing @rental={{RentalUnit}} />
+{{/each}}
